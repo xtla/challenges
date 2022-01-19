@@ -1,0 +1,15 @@
+(version 1)
+(debug deny)
+
+(allow process-fork)
+(allow process-exec* (path "/Users/xtal/ctf/sh/sh"))
+(allow process-exec* (path "/bin/sh"))
+(allow process-exec* (path "/bin/bash"))
+(allow process-exec* (path "/bin/cat"))
+
+(allow file-read-metadata (path "/bin/cat"))
+(allow file-read-metadata (path "/Users/xtal/ctf/flag"))
+
+(allow file-read-data (path "/Users/xtal/ctf/flag"))
+
+(deny default)
