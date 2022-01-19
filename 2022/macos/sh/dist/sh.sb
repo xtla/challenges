@@ -2,7 +2,7 @@
 (debug deny)
 
 (allow process-fork)
-(allow process-exec* (path "/Users/xtal/ctf/sh/sh"))
+(allow process-exec* (path "/Users/xtal/ctf/sh/target/sh"))
 (allow process-exec* (path "/bin/sh"))
 (allow process-exec* (path "/bin/bash"))
 (allow process-exec* (path "/bin/cat"))
